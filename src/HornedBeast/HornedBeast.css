@@ -1,0 +1,33 @@
+.col{
+  border: 5px solid black;
+  background-color: bisque;
+  padding: 1vw;
+  margin-bottom: 1vw;
+  margin-right: 1vw;
+  width: 20%;
+}
+
+.col h2{
+  width: 100%;
+}
+
+.col img{
+  width: 100%;
+  border: 2px solid black;
+}
+
+.col p{
+  font-size: 15px;
+  margin: auto;
+  display: inline-block;
+  margin-bottom: .5rem;
+}
+
+div .smallText{
+  font-size: 1em;
+}
+
+div .largeText{
+  font-size: 1.5em;
+  font-weight: 500;
+}
