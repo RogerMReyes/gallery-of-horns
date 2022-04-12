@@ -1,70 +1,47 @@
-# Getting Started with Create React App
+# About Me
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## Lab 01
 
-## Available Scripts
+In this lab I was able to complete the stretch goal by implementing .map(). With the array that was given the .map() will iterate throught he array and pass the information as props into the Horned Beast Component.
 
-In the project directory, you can run:
+## Lab 02
 
-### `npm start`
+**Number and name of feature:** #1 Display images
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+**Estimate of time needed to complete:** 10min
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+**Start time:** 2:06pm
 
-### `npm test`
+**Finish time:** 2:08pm
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+**Actual time needed to complete:** 2 min to complete due to having base code already implemented; Used json file instead of own animal array.
 
-### `npm run build`
+---
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+**Number and name of feature:** #2 Allow user to vote for their favorite Beast
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+**Estimate of time needed to complete:** 30min
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+**Start time:** 2:10pm
 
-### `npm run eject`
+**Finish time:** 2:22pm
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+**Actual time needed to complete:** 12 min to complete.
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+---
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+**Number and name of feature:** #3 Bootstrap
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+**Estimate of time needed to complete:** 20min
 
-## Learn More
+**Start time:** 2:25pm
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+**Finish time:** 3:00pm
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+**Actual time needed to complete:** 35 min to complete. Took time to figure out what exactly I wanted from React-BootStrap
 
-### Code Splitting
+---
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+**Number and name of feature:** #4 Stretch
 
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+For the stretch goal today I added an event listener on click onto the image title that will change the class name of the description text. When clicked the class will be updated and take on a bigger font size/ font weight helping readability. Clicking again will revert back to the origin class and change the text back to its original size
