@@ -17,8 +17,7 @@ class App extends React.Component {
       description: '',
 
       useSearch: false,
-      fuzzyArr: [],
-      searchValue: ''
+      fuzzyArr: animalData
     };
   }
 
@@ -37,35 +36,58 @@ class App extends React.Component {
     });
   }
 
-  handleSearch = (search) => {
+  handleSearch = search => {
     if(search === ''){
       this.setState({
         useSearch: false
       });
     }
     else {
-      console.log(search);
       let tempArr = animalData.filter(animal =>{
         let tempAnimal = animal.title.toLocaleLowerCase();
         return tempAnimal.includes(search.toLocaleLowerCase());
       })
       this.setState({
         useSearch: true,
-        searchValue: search,
         fuzzyArr: tempArr
       });
     }
-    console.log(this.state)
   }
   
-
+  handleFilter = filter => {
+    let filterNum = parseInt(filter);
+    this.setState({useSearch: true});
+    if(filterNum === 1){
+      let filteredArr = animalData.filter(animal => animal.horns === filterNum);
+      this.setState({fuzzyArr: filteredArr});
+    }
+    else if(filterNum === 2){
+      let filteredArr = animalData.filter(animal => animal.horns === filterNum);
+      this.setState({fuzzyArr: filteredArr});
+    }
+    else if(filterNum === 3){
+      let filteredArr = animalData.filter(animal => animal.horns === filterNum);
+      this.setState({fuzzyArr: filteredArr});
+    }
+    else if(filterNum === 100){
+      let filteredArr = animalData.filter(animal => animal.horns === filterNum);
+      this.setState({fuzzyArr: filteredArr});
+    }
+    else{
+      this.setState({
+        fuzzyArr: animalData,
+        useSearch: false
+      });
+      
+    };
+  }
 
   render() {
     return (
       <>
         <Header 
-          searchValue={this.state.searchValue}
           handleSearch={this.handleSearch}
+          handleFilter={this.handleFilter}
         />
         <Main
           animalData={this.state.useSearch ? this.state.fuzzyArr : animalData}
