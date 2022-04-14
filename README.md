@@ -60,3 +60,17 @@ For the stretch goal today I added an event listener on click onto the image tit
 
 **Number and name of feature:** #2 Stretch
 After a lot of research I was able to create a fuzzy search bar that updates per keypress
+
+## Lab 04
+
+**Number and name of feature:** Filter by Number of Horns
+
+**Estimate of time needed to complete:** 1 hour
+
+**Start time:** 3:30pm
+
+**Finish time:** 4:30pm
+
+**Actual time needed to complete:** 1 hour to complete
+
+Since I already implemented forms in my previous stretch goal adding in another was easier. One thing that I would like to look into more is getting both the filtering options to work off each other.
