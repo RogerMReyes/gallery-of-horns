@@ -1,57 +1,80 @@
 import React from 'react';
 import '../HornedBeast/HornedBeast.css'
 import Col from 'react-bootstrap/Col'
+import { Card, Button } from 'react-bootstrap';
 
 class HornedBeast extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
-      timesClicked: '',
-      enhanceText: 'smallText'
+      timesClicked: 0,
     };
   }
 
   handleClick = () => {
     this.setState({
-      timesClicked: this.state.timesClicked + '❤️'
+      timesClicked: this.state.timesClicked + 1
     });
   }
 
-  titleClicked = () => {
-    if(this.state.enhanceText === 'smallText'){
-      this.setState({
-        enhanceText: 'largeText'
-      })
-    }
-    else {
-      this.setState({
-        enhanceText: 'smallText'
-      })
-    }
+  handleImgClicked = () => {
+    this.props.showModalHandler(this.props.title, this.props.imageUrl, this.props.description);
   }
 
   render() {
     return (
-      <Col>
-        <h2
-          onClick={this.titleClicked}
+      <Col
+        style={{ marginTop: '20px' }}
+      >
+        <Card
+          style={{
+            width: '100%',
+            height: '100%',
+            padding: '10px',
+            backgroundColor: 'beige',
+            display: 'flex',
+            justifyContent: 'space-between'
+          }}
         >
-          {this.props.title}
-        </h2>
-        <img
-          src={this.props.imageUrl}
-          alt={this.props.description}
-          title={this.props.title}
-          onClick={this.handleClick}
-        />
-        <p
-          className={this.state.enhanceText}
-        >
-          {this.props.description}
-        </p>
-        <p>
-          {this.state.timesClicked}
-        </p>
+          <Card.Title 
+            style={{
+              fontSize: '1.5em',
+              fontWeight: '800'
+            }}
+          >
+            {this.props.title}
+          </Card.Title>
+          <Card.Img
+            src={this.props.imageUrl}
+            alt={this.props.description}
+            title={this.props.title}
+            onClick={this.handleImgClicked}
+          />
+          <Card.Text
+            className={this.state.enhanceText}
+          >
+            {this.props.description}
+          </Card.Text>
+          <Card.Footer
+            style={{
+              display: 'flex',
+              flexDirection: 'column',
+              backgroundColor: 'azure',
+              justifyContent: 'center',
+              alignItems: 'center',
+            }}
+          >
+            <Card.Text>
+              {this.state.timesClicked} ❤️ favorites!
+            </Card.Text>
+            <Button
+              sticky="bottom"
+              onClick={this.handleClick}
+            >
+              Click to Like!
+            </Button>
+          </Card.Footer>
+        </Card>
       </Col>
     )
   }
