@@ -5,11 +5,11 @@ body{
 }
 h1{
   font-size: 3em;
-  width: fit-content;
+  /* width: fit-content;
   height: fit-content;
-  margin: auto;
+  margin: auto; */
   color: burlywood;
-}
+} 
 
 h3{
   text-align: end;

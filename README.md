@@ -45,3 +45,18 @@ In this lab I was able to complete the stretch goal by implementing .map(). With
 **Number and name of feature:** #4 Stretch
 
 For the stretch goal today I added an event listener on click onto the image title that will change the class name of the description text. When clicked the class will be updated and take on a bigger font size/ font weight helping readability. Clicking again will revert back to the origin class and change the text back to its original size
+
+## Lab 03
+
+**Number and name of feature:** #1 Display a Modal
+
+**Estimate of time needed to complete:** 1 hour
+
+**Start time:** 2:11pm
+
+**Finish time:** 3:00pm
+
+**Actual time needed to complete:** 49 min to complete. Next time might be better to fully plan the flow before coding
+
+**Number and name of feature:** #2 Stretch
+After a lot of research I was able to create a fuzzy search bar that updates per keypress
