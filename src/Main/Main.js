@@ -21,7 +21,7 @@ class Main extends React.Component {
     return (
       <main>
         <Row 
-          sm={1} md={2} lg={4}
+          xs= {1} md={4} lg={5}
           style={{margin: '10px 20px'}}
         >
           {beastElem}
